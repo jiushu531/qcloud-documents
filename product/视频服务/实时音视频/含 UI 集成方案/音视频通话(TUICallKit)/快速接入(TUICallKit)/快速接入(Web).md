@@ -122,15 +122,15 @@ TUICallKit 是基于腾讯云 [即时通信 IM](https://cloud.tencent.com/docume
 - [trtc-js-sdk](https://www.npmjs.com/package/trtc-js-sdk) 
 - [tim-js-sdk](https://www.npmjs.com/package/tim-js-sdk) 
 - [tsignaling](https://www.npmjs.com/package/tsignaling)
-- [tuicall-engine-webrtc](https://www.npmjs.com/package/tuicall-engine-webrtc)
+- [tuicall-engine-web](https://www.npmjs.com/package/tuicall-engine-web)
 
 ```javascript
 npm i trtc-js-sdk --save
 npm i tim-js-sdk --save
 npm i tsignaling --save
-npm i tuicall-engine-webrtc --save
+npm i tuicall-engine-web --save
 
-import { TUICallEngine, TUICallEvent } from "tuicall-engine-webrtc"
+import { TUICallEngine, TUICallEvent } from "tuicall-engine-web"
 ```
 ### Script 集成
 
@@ -138,7 +138,7 @@ import { TUICallEngine, TUICallEvent } from "tuicall-engine-webrtc"
 - [trtc-js-sdk](https://web.sdk.qcloud.com/component/trtccalling/download/trtc-js-sdk.zip) 
 - [tim-js-sdk](https://web.sdk.qcloud.com/component/trtccalling/download/tim-js-sdk.zip) 
 - [tsignaling](https://web.sdk.qcloud.com/component/trtccalling/download/tsignaling.zip)
-- [tuicall-engine-webrtc](https://web.sdk.qcloud.com/component/trtccalling/download/tuicall-engine-webrtc.zip)
+- [tuicall-engine-web](https://web.sdk.qcloud.com/component/trtccalling/download/tuicall-engine-web.zip)
 
 ```javascript
 // 如果您通过 script 方式使用 trtc-calling-js，需要按顺序先手动引入 trtc.js
@@ -151,9 +151,9 @@ import { TUICallEngine, TUICallEvent } from "tuicall-engine-webrtc"
 <script src="./tsignaling.js"></script>
 
 // 最后再手动引入 tuicallengine.js
-<script src="./tuicall-engine-webrtc.js"></script>
+<script src="./tuicall-engine-web.js"></script>
 
-const { TUICallEngine, TUICallEvent } = window['tuicall-engine-webrtc']
+const { TUICallEngine, TUICallEvent } = window['tuicall-engine-web']
 ```
 
 ## 步骤三：创建 TUICallEngine 对象
